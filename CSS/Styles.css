@@ -2,14 +2,12 @@
 /* ------------------------------- Colors ------------------------------- */
 /*
 black- #2f3c4a
-label-black- #262639
-white- #f3f2f6
 light-grey- #908e8e
 placeholder-grey- #cccaca
 text-field-grey- #e7e7e7
 grey- #dbdbdb
-dark-blue- #282966
-teal- #39a5a8
+dark-blue- #2f3c4a
+
 */
 
 /* ============================ Base Style ============================== */
@@ -20,10 +18,75 @@ teal- #39a5a8
 }
 
 body {
-  margin:  auto;
+  margin: 0 auto;
   width: 100%;
   font-family: 'Merriweather', 'Georgia', serif;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border:0 none;
+  margin: 0;
+}
+
+legend{
+  margin-left: -5px;;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 1em;
+  color: #2f3c4a;
+}
+
+textarea {
+  width: 100%;
+  height: 130px;
+  max-width: 320px;
+  background-color: #e7e7e7;
+  border-radius: 5px;
+  border: none;
+  margin: 0 auto;
+}
+
+input, label {
+    display:block;
+}
+
+div p{
+  color: grey;
+}
+label {
+  padding: .8em;
+  margin-left: -10px;
+  color: grey;
+}
+select,
+input {
+  background-color: #cccaca;
+  border-radius: 5px;
+  width: 350px;
+  max-width: 310px;
+  margin: auto;
+  padding: 1em;
+  justify-content: flex-end;
+}
+button {
+  width: 100%;
+  margin: auto;
+  padding: .9em;
+  border-radius: 5px;
+  background-color: #2f3c4a;
+  color: #fff;
+}
+
+
+/* ============================= Main Style =============================== */
 
 .dark-header {
   margin: auto;
@@ -32,15 +95,13 @@ body {
   color:  #f3f2f6;
   background-color: #2f3c4a;
   text-align: center;
-  padding: 25px 30px;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
+  padding: 30px 20px;
+  font-size: .7em;
 }
 
 .top-form {
+  display: flex;
+  flex-direction: column;
   padding-top: 2em;
   padding-bottom: 2em;
 }
@@ -52,88 +113,124 @@ header {
 .sub-header {
   color: #908e8e;
   margin: 0 2em;
+  text-align: center;
 }
-
-form {
+hr {
+  border: 0;
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-top: 2px;
+}
+.thin-line {
+  border: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-top: 2px;
+  margin-bottom: 1em;
+}
+.fieldset1 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-top: 1em;
+  background-color: #ededed;
+}
+.contact_info {
+  padding: 15px;
+}
+.zip{
+  margin-right: 130px;;
+  max-width: 180px;
 }
 
-fieldset {
-   border:0 none;
-   margin: 0;
+.fieldset2 {
+  display: flex;
+  flex-direction: row;
+  background-color: #ededed;
 }
-legend{
-  font-size: 1.3em;
-  font-weight: bold;
-  padding: 1em;
+.news {
+  padding: .3em;
 }
+#news_format_HTML,
+#plain_text{
+  width: 20px;
+  margin: 0;
+  margin-left: 6px;
 
-textarea {
-  max-width: 769px;
+}
+#newsletter_HTML,
+#newsletter_CSS,
+#newsletter_Javascript {
+  width: 20px;
+  padding: 5px;
+  margin: 0;
+}
+.checkboxradio {
+  margin-left: 20px;
+  margin-top: -30px;
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   margin-top: auto;
-  margin-bottom: 0;
-  max-height: 50px;
-  background: #ccc;
+  margin-bottom: 5em;
+  max-height: 4em;
+  color: #908e8e;
   text-align: center;
+  padding: 2em 0;
 }
-
-.news {
-  width: 100%;
-  max-width: 769px;
-}
-
-/* ============================= Main Style =============================== */
-
-
-
-
-
-
-
-
-/* ============================= Footer Style ============================== */
-
-
-
-
-
-
-
-
-
-
 
 
 /* ============================ Media Queries ============================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
-  .dark-header {
+  hr,
+  .thin-line {
+    margin: auto;
+    padding: 1px;
     width: 100%;
-  }
-
-
-  #wrapper {
     max-width: 769px;
-    font-size: 1.3em;
+    border: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 3px;
+    margin-top: 3px;
   }
-
-
   form {
-    max-width:  600px;
+    max-width:  769px;
     margin: 0 auto;
+    font-size: 1.1em;
   }
-
+  input, label {
+      display: inline-block;
+  }
+  select,
+  input {
+    background-color: #cccaca;
+    border-radius: 5px;
+    padding: 1em;
+    width: 550px;
+    align-self: flex-end;
+    margin-right: 0;
+  }
+  .contact_info {
+    display: flex;
+    justify-content: space-between;
+  }
   textarea {
-    max-width: 320px;
+    width: 710px;
+    max-width: 710px;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-left: 1em;
   }
-
+  button {
+    padding: 1.5em;
+    font-size: 1.1em;
+  }
 
 }
