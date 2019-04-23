@@ -190,6 +190,15 @@ footer {
 
 
 /* ============================ Media Queries ============================== */
+@media screen and (device-aspect-ratio: 40/71) {
+  input {
+    width: 250px;
+    margin-left: 0;
+  }
+  #state {
+    width: 250px;
+  }
+}
 
 @media (min-width: 768px) {
 
