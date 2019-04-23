@@ -135,6 +135,11 @@ hr {
 .contact_info {
   padding: 15px;
 }
+
+#state {
+  border: none;
+}
+
 input:focus, textarea:focus {
   background-color: #e7e7e7;
 }
