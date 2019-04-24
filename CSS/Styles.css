@@ -254,7 +254,7 @@ footer {
   }
   fieldset{
     width: 768px;
-    max-width: 768px
+    max-width: 768px;
   }
   input, label {
       display: inline-block;
@@ -287,6 +287,7 @@ footer {
   button {
     padding: 1.5em;
     font-size: 1.1em;
+    margin-top: 2em;
   }
 
 }
