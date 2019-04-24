@@ -63,7 +63,7 @@ label {
 }
 select,
 input {
-  background-color: #cccaca;
+  background-color: grey;
   border-radius: 5px;
   width: 100%;
   margin: 0;
@@ -78,7 +78,14 @@ button {
   background-color: #2f3c4a;
   color: #fff;
 }
-
+input {
+  width: 100%;
+  margin-left: 0;
+}
+#state {
+  width: 260px;
+  border: none;
+}
 
 /* ============================= Main Style =============================== */
 
@@ -142,10 +149,6 @@ input {
   padding: 15px;
 }
 
-#state {
-  border: none;
-}
-
 select {
   color: #2f3c4a;
 }
@@ -154,11 +157,10 @@ textarea:focus {
   background-color: #e7e7e7;
 }
 input:focus {
-  border: 3px groove #908e8e;
-}
-
-input:hover {
   background-color: #2f3c4a;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
 }
 
 .zip{
@@ -216,22 +218,6 @@ footer {
 
 /* ============================ Media Queries ============================== */
 
-/* @media screen and (device-aspect-ratio: 40/71) This doesn't seem to be compatible anymore.... */
-
-@media (min-width: 320px) and (max-width: 370px){
-
-  body{
-    width: 384px;
-  }
-  input {
-    width: 100%;
-    margin-left: 0;
-  }
-  #state {
-    width: 250px;
-  }
-
-}
 
 @media (min-width: 769px) {
 
@@ -273,6 +259,10 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+  #state {
+    width: 500px;
+  }
+
   .zip{
     margin-right: 320px;;
     max-width: 180px;
