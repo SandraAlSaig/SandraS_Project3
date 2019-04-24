@@ -73,7 +73,7 @@ input {
 button {
   width: 100%;
   margin: auto;
-  padding: .9em;
+  padding: 1.3em;
   border-radius: 5px;
   background-color: #2f3c4a;
   color: #fff;
@@ -218,7 +218,7 @@ footer {
 
 /* ============================ Media Queries ============================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
   hr,
   .thin-line {
@@ -239,7 +239,7 @@ footer {
   }
   fieldset{
     width: 768px;
-    max-width: 769px;
+    max-width: 768px;
   }
   input, label {
       display: inline-block;
